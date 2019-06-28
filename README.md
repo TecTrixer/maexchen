@@ -1,3 +1,3 @@
 # Mäxchen
 
-Hier kann man dasd berühmte Trinkspiel Mäxchen online spielen.
+Hier kann man das berühmte Trinkspiel Mäxchen online spielen.
