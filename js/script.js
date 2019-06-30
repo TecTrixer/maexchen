@@ -68,8 +68,8 @@ function wuerfeln() {
         document.getElementById("maexchen").outerHTML = "<h2 class=\"text-success\" id=\"maexchen\">Mäxchen !!!</h2>";
     }
     if (reihenfolge[zahl] > reihenfolge[letztezahl]) {
-        fakezahl1 = prompt("Was ist ihre Lüge für Würfel 1? Dein Vorgänger hat " + fakezahl + " gewürfelt.");
-        fakezahl2 = prompt("Was ist ihre Lüge für Würfel 2? Dein Vorgänger hat " + fakezahl + " gewürfelt.");
+        fakezahl1 = prompt("Was ist ihre Lüge für Würfel 1? Dein Vorgänger hat " + fakezahl + " gewürfelt. Du hast " + zahl + " gewürfelt.");
+        fakezahl2 = prompt("Was ist ihre Lüge für Würfel 2? Dein Vorgänger hat " + fakezahl + " gewürfelt. Du hast " + zahl + " gewürfelt.");
         if (fakezahl1 > fakezahl2){
             fakezahl = fakezahl1 + " " + fakezahl2;
             fakeaugenzahl1 = imgsrc[fakezahl1];
@@ -108,9 +108,10 @@ function naechster() {
     if (zahl == "2 1") {
         document.getElementById("maexchen").outerHTML = "<h2 class=\"text-success\" id=\"maexchen\"></h2>";
         letztezahl = "3 1";
+        fakezahl = "3 1";
     }
     else {
-        letztezahl = zahl;
+        letztezahl = fakezahl;
     }
     document.getElementById("augenzahl1").outerHTML = "<img id=\"augenzahl1\" src=\"pic/dice-unknown.png\" width=\"100\" height=\"100\">";
     document.getElementById("augenzahl2").outerHTML = "<img id=\"augenzahl2\" src=\"pic/dice-unknown.png\" width=\"100\" height=\"100\">";
