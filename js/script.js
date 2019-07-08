@@ -68,8 +68,9 @@ function wuerfeln() {
         document.getElementById("maexchen").outerHTML = "<h2 class=\"text-success\" id=\"maexchen\">Mäxchen !!!</h2>";
     }
     if (reihenfolge[zahl] > reihenfolge[letztezahl]) {
-        fakezahl1 = prompt("Was ist ihre Lüge für Würfel 1? Dein Vorgänger hat " + fakezahl + " gewürfelt. Du hast " + zahl + " gewürfelt.");
-        fakezahl2 = prompt("Was ist ihre Lüge für Würfel 2? Dein Vorgänger hat " + fakezahl + " gewürfelt. Du hast " + zahl + " gewürfelt.");
+        input = prompt("Sie haben " + zahl + " gewürfelt. Ihr Vorgänger hat " + fakezahl + " gewürfelt. Was ist deine Lüge?)
+        fakezahl1 = input.split("")[0]
+        fakezahl2 = input.split("")[1]
         if (fakezahl1 > fakezahl2){
             fakezahl = fakezahl1 + " " + fakezahl2;
             fakeaugenzahl1 = imgsrc[fakezahl1];
